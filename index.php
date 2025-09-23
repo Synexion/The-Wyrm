@@ -11,7 +11,7 @@
 <body>
   <!-- barre de navigation -->
   <nav class="nav_bar">
-    <a href="#">Accueil</a>
+    <a href="index.php">Accueil</a>
     <a href="#">Jouer maintenant !</a>
     <a href="#">Actualités</a>
     <a href="#">Forum</a>
@@ -50,27 +50,54 @@
           <p>Arpenter un monde créer par un unique développeur passionné des mondes d'héroïque fantaisie.</p>
           <p>Ce jeu à pour but de me perfectionner dans le domaine du développement. Aussi bien vers le développement web par le biais de ce site internet et du développement du jeu vidéo The Wyrm.</p>
           <p>Ce site me servira de Portfolio, dans l'objectif de trouver une alternance afin de parfaire mes aptitudes dans ces domaines.</p>
-          <p>Tout retour constructif est évidemment bienvenue. Vous pouvez les transmettres grâce au formulaire de contact situé dans la vue contact, qui est accescible par la barre de navigation.</p>
+          <p>Tout retour constructif est évidemment bienvenue. Vous pouvez les transmettres grâce au formulaire de contact situé dans la vue contact, qui est accescible par la barre de navigation ou le footer.</p>
         </div>
       </div>
     </div>
   </main>
   <footer>
-    <div class="footer_logo">
-      <img src="./assets/logo-ssf.png" alt="logo the wyrm sans fond">
-    </div>
-    <div class="footer_links">
-      <div class="footer_link">
-        <div class="footer_link_title">
-          <h2>Liens</h2>
+    <div class="footer_content">
+      <div class="footer_logo">
+        <a href="index.php">
+          <img src="./assets/logo-ssf.png" alt="logo the wyrm sans fond">
+        </a>
+      </div>
+      <div class="footer_links">
+        <div class="footer_link">
+          <div class="footer_link_title">
+            <h2>Liens</h2>
+          </div>
+          <div class="links">
+            <div class="hover">
+              <a href="index.php">Accueil</a>
+            </div>
+            <div class="hover">
+              <a href="#">Jouer maintenant !</a>
+            </div>
+            <div class="hover">
+              <a href="#">Actualités</a>
+            </div>
+            <div class="hover">
+              <a href="#">Forum</a>
+            </div>
+            <div class="hover">
+              <a href="#">Contact</a>
+            </div>
+            <div class="hover">
+              <a href="#">S'inscrire / Se connecter</a>
+            </div>
+          </div>
         </div>
-        <div class="links">
-          <a href="#">Accueil</a>
-          <a href="#">Jouer maintenant !</a>
-          <a href="#">Actualités</a>
-          <a href="#">Forum</a>
-          <a href="#">Contact</a>
-          <a href="#">S'inscrire / Se connecter</a>
+      </div>
+      <div class="footer_reseau">
+        <h2>Réseaux</h2>
+        <div class="github">
+          <img src="./assets/logo_github.jpg" alt="logo github">
+          <a href="https://github.com/Synexion" target="_blank">Git Hub</a>
+        </div>
+        <div class="linkedin">
+          <img src="./assets/logo_linkedin.png" alt="logo github">
+          <a href="https://www.linkedin.com/in/lilian-casagrande/" target="_blank">LinkedIn</a>
         </div>
       </div>
     </div>

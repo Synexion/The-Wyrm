@@ -17,6 +17,7 @@
 body {
   background: #181818;
   min-width: 100vh;
+  overflow-x: hidden;
 }
 
 /* ----- NAV BAR --------- */
@@ -162,7 +163,7 @@ body {
 /* ----- FOOTER ------ */
 
 footer {
-  height: 200px;
+  height: auto;
   width: 100vw;  
   background: #181818;
   border-top-left-radius: 15px;
@@ -172,27 +173,109 @@ footer {
   display: flex;
 }
 
-footer .footer_logo {
+footer .footer_content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+footer .footer_content .footer_logo {
   height: 200px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 10%;
 }
 
-footer .footer_logo img {
-  height: 100px;
-  width: 100px;
+footer .footer_content .footer_logo img {
+  height: 150px;
+  width: 150px;
 }
 
-footer .footer_links .footer_link a {
+footer .footer_content .footer_links .footer_link {
+  width: 100%;
+}
+
+footer .footer_content .footer_links .footer_link .links {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
-footer .footer_links .footer_link .links a {
+footer .footer_content .footer_links .footer_link .links .hover a {
   position: relative;
 }
 
-footer .footer_links .footer_link .links a:hover::after {
+footer .footer_content .footer_links .footer_link .links .hover a:hover::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  /* transform: translate(-50%,-50%); */
+  background: whitesmoke;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+/* ----- RESEAU ------ */
+/* ---- GIT HUB ------ */
+
+
+footer .footer_content .footer_reseau {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .footer_content .footer_reseau .github {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+footer .footer_content .footer_reseau .github img {
+  height: 25px;
+  width: 25px;
+}
+
+footer .footer_content .footer_reseau .github a {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+footer .footer_content .footer_reseau .github a:hover::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  /* transform: translate(-50%,-50%); */
+  background: whitesmoke;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+/* ----- LINKEDIN ------- */
+
+footer .footer_content .footer_reseau .linkedin {
+  display: flex;
+  gap: 5px;
+  /* align-items: center; */
+}
+
+footer .footer_content .footer_reseau .linkedin img {
+  height: 30px;
+  width: 30px;
+}
+
+footer .footer_content .footer_reseau .linkedin a {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+footer .footer_content .footer_reseau .linkedin a:hover::after {
   content: '';
   height: 1px;
   width: 100%;
