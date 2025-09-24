@@ -20,6 +20,57 @@ body {
   overflow-x: hidden;
 }
 
+/* ------ OVERLAY / LOGIN SUBSCRIBE */
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 3;
+}
+
+.login .login_box {
+  height: 250px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #181818;
+  border-radius: 20px;
+}
+
+.login .login_box .login_form .login_register {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.login .login_box .login_form .login_title h3 {
+  text-align: center;
+}
+
+.login .login_box .login_form .login_register input {
+  outline: none;
+  color: #181818;
+}
+
+.login .login_box .login_form .login_register form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.login .login_box .login_form .login_register #valider {
+  padding: 5px;
+  background: #ad3100;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  color: whitesmoke;
+}
+
 /* ----- NAV BAR --------- */
 
 .nav_bar {

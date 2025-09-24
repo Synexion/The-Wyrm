@@ -9,7 +9,6 @@
   <title>The Wyrm</title>
 </head>
 <body>
-  <!-- barre de navigation -->
   <nav class="nav_bar">
     <a href="index.php">Accueil</a>
     <a href="#">Jouer maintenant !</a>
@@ -18,6 +17,26 @@
     <a href="#">Contact</a>
     <a href="#">S'inscrire / Se connecter</a>
   </nav>
+  <!-- formulaire d'inscription en overlay -->
+  <div class="login">
+    <div class="login_box">
+      <div class="login_form">
+        <div class="login_register">
+          <div class="login_title">
+            <h3>Se connecter</h3>
+          </div>
+          <form method="POST">
+            <label for="mail">E Mail</label>
+            <input type="text" placeholder="Entrez votre adresse mail" name="mail" required>
+            <label for="pwd">Mot de passe</label>
+            <input type="text" placeholder="Entrez votre mot de passe" name="pwd" required>
+            <input type="submit" value="Se connecter" id="valider">
+            <a href="#">Vous n'êtes pas inscrit ? Cliquez ici</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <header class="header_content">
     <div class="header_shadow"></div>
     <div class="header_text">
