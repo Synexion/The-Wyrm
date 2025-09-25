@@ -16,24 +16,29 @@
 
 body {
   background: #181818;
-  min-width: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
   overflow-x: hidden;
 }
 
 /* ------ OVERLAY / LOGIN SUBSCRIBE */
 
 .login {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 3;
-  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
 
 .login .login_box {
-  height: 250px;
-  width: 300px;
+  height: 400px;
+  width: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,12 +95,16 @@ body {
 /* ----- OVERLAY / SUBSCRIBE ---- */
 
 .subscribe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 4;
-  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
 
 .subscribe .sub_box {
@@ -418,10 +427,6 @@ footer .footer_content .footer_reseau .linkedin a:hover::after {
 
 /* ------ JS CLASS ------ */
 
-.show {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 4;
+.hidden {
+  display: none;
 }
