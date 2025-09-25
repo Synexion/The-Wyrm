@@ -53,3 +53,4 @@ function sub_link(e) {
 
 log_choice.addEventListener('click', log_link);
 sub_choice.addEventListener('click', sub_link);
+

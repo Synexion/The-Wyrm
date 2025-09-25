@@ -100,7 +100,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -248,21 +248,83 @@ body {
   justify-content: space-evenly;
 }
 
-.main_content .main_nav .quete a, .main_content .main_nav .hero a, .main_content .main_nav .exploration a {
-  width: 100%;
+.main_content .main_nav .quete , .main_content .main_nav .hero , .main_content .main_nav .exploration {
   position: relative;
 }
 
-
-.main_content .main_nav .quete a:hover::after, .main_content .main_nav .hero a:hover::after, .main_content .main_nav .exploration a:hover::after {
-  content: '';
-  height: 1px;
+.main_content .main_nav .quete a, .main_content .main_nav .hero a, .main_content .main_nav .exploration a {
   width: 100%;
-  /* transform: translate(-50%,-50%); */
-  background: whitesmoke;
-  bottom: 0;
-  left: 0;
+}
+
+/* --- HOVER MAIN LIEN --- */
+/* --- attributs globaux des overlay --- */
+
+.hover_box {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.8);
+  transition: 0.5s, opacity 0.5s;
   position: absolute;
+  top: 60px;
+  left: calc(100% - 95px);
+  height: auto;
+  width: 600px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 30px;
+  z-index: 1000;
+  gap: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* --- calcul différents de la width du parents */
+
+.hero .hover_box {
+  left: calc(100% - 120px);
+}
+
+/* --- inversion du sens de l'overlay --- */
+
+.exploration .hover_box {
+  flex-direction: row-reverse;
+  left: -435px;
+}
+
+/* --- dimensions des images des overlay --- */
+
+.hover_box .hover_box_img img {
+  height: 250px;
+  width: 220px;
+}
+
+/* --- alignement du chevron --- */
+
+.chevron_pos {
+  display: flex;
+  align-items: center;
+}
+
+/* --- affichage progressif de l'overlay --- */
+
+.main_content .main_nav .quete:hover .hover_box,
+.main_content .main_nav .hero:hover .hover_box,
+.main_content .main_nav .exploration:hover .hover_box {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+/* --- rotation du chevron --- */
+
+.main_content .main_nav .quete:hover .chevron,
+.main_content .main_nav .hero:hover .chevron,
+.main_content .main_nav .exploration:hover .chevron {
+  transform: rotate(90deg);
+  transition: 0.5s;
 }
 
 /* ------ MAIN PRESENTATION ------ */

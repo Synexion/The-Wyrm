@@ -1,13 +1,46 @@
 <main class="main_content">
   <div class="main_nav">
     <div class="quete">
-      <a href="#"><h3>Sauvez notre monde</h3></a>
+      <div class="chevron_pos">
+        <a href="#"><h3>Sauvez notre monde</h3></a>
+        <i class="fa-solid fa-chevron-right chevron"></i>
+      </div>
+      <div class="hover_box">
+        <div class="hover_box_img">
+          <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/assets/header_bg.png" alt="test">
+        </div>
+        <div class="hover_box_text">
+          <p>Seul des champions dignes de ce nom pourront vaincre la menace qui s'abattera sur le monde d'Arakorn.</p>
+        </div>
+      </div>
     </div>
     <div class="hero">
-      <a href="#"><h3>Définissez qui vous êtes</h3></a>
+      <div class="chevron_pos">
+        <a href="#"><h3>Définissez qui vous êtes</h3></a>
+        <i class="fa-solid fa-chevron-right chevron"></i>
+      </div>
+      <div class="hover_box">
+        <div class="hover_box_img">
+          <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/assets/hero_img.png" alt="hero fantaisie">
+        </div>
+        <div class="hover_box_text">
+          <p>Soyez libre dans la façon dont vous allez triompher du mal.</p>
+        </div>
+      </div>
     </div>
     <div class="exploration">
-      <a href="#"><h3>Découvrez un monde magique</h3></a>
+      <div class="chevron_pos">
+        <a href="#"><h3>Découvrez un monde magique</h3></a>
+        <i class="fa-solid fa-chevron-right chevron"></i>
+      </div>
+      <div class="hover_box">
+        <div class="hover_box_img">
+          <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/assets/exploration_img.png" alt="carte medieval">
+        </div>
+        <div class="hover_box_text">
+          <p>Partagez votre aventure avec vos amis, aidez les villagoies et protéger les plus peureux au travers d'un monde inoubliable.</p>
+        </div>
+      </div>
     </div>
   </div>
   <div class="main_presentation">
