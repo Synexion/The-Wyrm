@@ -15,7 +15,7 @@
     <a href="#">Actualités</a>
     <a href="#">Forum</a>
     <a href="#">Contact</a>
-    <a href="#">S'inscrire / Se connecter</a>
+    <a href="#" id="reg_sub_form">S'inscrire / Se connecter</a>
   </nav>
   <!-- formulaire d'inscription en overlay -->
   <div class="login">
@@ -25,14 +25,42 @@
           <div class="login_title">
             <h3>Se connecter</h3>
           </div>
-          <form method="POST">
+          <form method="POST" name="log_form">
             <label for="mail">E Mail</label>
             <input type="text" placeholder="Entrez votre adresse mail" name="mail" required>
             <label for="pwd">Mot de passe</label>
-            <input type="text" placeholder="Entrez votre mot de passe" name="pwd" required>
+            <input type="password" placeholder="Entrez votre mot de passe" name="pwd" required>
             <input type="submit" value="Se connecter" id="valider">
-            <a href="#">Vous n'êtes pas inscrit ? Cliquez ici</a>
+            <div class="link_sub">
+              <a href="#">Vous n'êtes pas inscrit ? Cliquez ici</a>
+            </div>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="subscribe">
+    <div class="sub_box">
+      <div class="sub_register">
+        <div class="sub_title">
+          <h3>S'inscrire</h3>
+        </div>
+        <div class="sub_form">
+          <form method="POST" name="sub_form">
+            <label for="pseudo">Votre pseudo</label>
+            <input type="text" name="pseudo" placeholder="Pseudo" required>
+            <label for="mail">Entrez votre e-mail</label>
+            <input type="text" name="mail" placeholder="E-mail" required>
+            <label for="pwd">Entrez un mot de passe</label>
+            <small>8 caractères, 1 majuscule et un caractère spécial minimum</small>
+            <input type="password" name="pwd" placeholder="Mot de passe" required>
+            <label for="pwd_confirm">Confirmez votre mot de passe</label>
+            <input type="password" name="pwd_confirm" placeholder="Confirmez votre mot de passe" required>
+            <input type="submit" value="S'enregistrer" id="valider">
+          </form>
+          <div class="link_log">
+            <a href="#">Déjà inscrit ? Cliquez ici</a>
+          </div>
         </div>
       </div>
     </div>
@@ -70,6 +98,7 @@
           <p>Ce jeu à pour but de me perfectionner dans le domaine du développement. Aussi bien vers le développement web par le biais de ce site internet et du développement du jeu vidéo The Wyrm.</p>
           <p>Ce site me servira de Portfolio, dans l'objectif de trouver une alternance afin de parfaire mes aptitudes dans ces domaines.</p>
           <p>Tout retour constructif est évidemment bienvenue. Vous pouvez les transmettres grâce au formulaire de contact situé dans la vue contact, qui est accescible par la barre de navigation ou le footer.</p>
+          <p>*Toutes images/photos utilisé sont libre de droit ou généré par IA*</p>
         </div>
       </div>
     </div>

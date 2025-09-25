@@ -28,6 +28,7 @@ body {
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 3;
+  display: none;
 }
 
 .login .login_box {
@@ -69,6 +70,84 @@ body {
   border-radius: 8px;
   border: none;
   color: whitesmoke;
+}
+
+.login .login_box .login_form .link_sub a {
+  position: relative;
+}
+
+.login .login_box .login_form .link_sub a:hover::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  /* transform: translate(-50%,-50%); */
+  background: whitesmoke;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+/* ----- OVERLAY / SUBSCRIBE ---- */
+
+.subscribe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 4;
+  display: none;
+}
+
+.subscribe .sub_box {
+  height: 500px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #181818;
+  border-radius: 20px;
+}
+
+.subscribe .sub_box .sub_register h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subscribe .sub_box .sub_register form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.subscribe .sub_box .sub_register .sub_form input {
+  outline: none;
+  color: #181818;
+}
+
+.subscribe .sub_box .sub_register .sub_form #valider {
+  color: whitesmoke;
+  background: #ad3100;
+  cursor: pointer;
+}
+
+.subscribe .sub_box .sub_register .link_log {
+  text-align: center;
+}
+
+.subscribe .sub_box .sub_register .link_log a {
+  position: relative;
+}
+
+.subscribe .sub_box .sub_register .link_log a:hover::after{
+  content: '';
+  height: 1px;
+  width: 100%;
+  /* transform: translate(-50%,-50%); */
+  background: whitesmoke;
+  bottom: 0;
+  left: 0;
+  position: absolute;
 }
 
 /* ----- NAV BAR --------- */
@@ -335,4 +414,14 @@ footer .footer_content .footer_reseau .linkedin a:hover::after {
   bottom: 0;
   left: 0;
   position: absolute;
+}
+
+/* ------ JS CLASS ------ */
+
+.show {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 4;
 }
