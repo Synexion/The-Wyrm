@@ -1,0 +1,32 @@
+.pos {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.pos .form_group {
+  height: 800px;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pos .form_group .form_contact .form .flex_row {
+  display: flex;
+  gap: 50px;
+}
+
+.pos .form_group .form_contact .form .width_ {
+  width: 100%;
+}
+
+.pos .form_group .form_contact .form .flex_row .width {
+  width: 50%;
+}
+
+.form_contact .form form .flex_col {
+  display: flex;
+  flex-direction: column;
+}

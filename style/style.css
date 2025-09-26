@@ -371,7 +371,10 @@ footer {
   border-top-right-radius: 15px;
   box-shadow: 2px -2px 13px rgba(128, 128, 128, 0.151);
   margin-top: 100px;
+  padding-bottom: 40px;
   display: flex;
+  position:static;
+  bottom: 0;
 }
 
 footer .footer_content {

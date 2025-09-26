@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Bienvenue au sein de la confrérie des protecteurs ! Rejoignez la bataille pour sauver Arakorn !">
   <link rel="stylesheet" href="<?php $_SERVER['DOCUMENT_ROOT']?>/style/style.css">
+  <link rel="stylesheet" href="<?php $_SERVER['DOCUMENT_ROOT']?>/_fo/_fo_styles/contact.css">
   <link rel="shortcut icon" href="<?php $_SERVER['DOCUMENT_ROOT']?>/assets/logo-ssf.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <title>The Wyrm</title>
